@@ -1,0 +1,38 @@
+div {
+    display: block;
+}
+.playground-container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    padding: 15px;
+    background: #42A5F5;
+}
+
+.grid-container {
+    position: absolute;
+    z-index: 1;
+}
+
+.grid-row {
+    margin-bottom: 23px;
+}
+
+.grid-cell {
+    width: 106.25px;
+    height: 106.25px;
+    margin-right: 20px;
+    float: left;
+    background: #BBDEFB;
+
+    font-size: 55px;
+    text-align: center;
+    line-height: 100px;
+    color: #616161;
+}
+
+.grid-row:after {
+    content: "";
+    display: block;
+    clear: both;
+}
